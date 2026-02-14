@@ -20,13 +20,12 @@ export default function SignInFormBug() {
   return (
     <div className="flex flex-col flex-1 lg:w-1/2 w-full">
       <div className="w-full max-w-md sm:pt-10 mx-auto mb-5">
-        <Link
-          href="/"
-          className="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+        <span
+          className="inline-flex items-center text-sm text-gray-500 cursor-not-allowed opacity-70 dark:text-gray-400"
         >
           <ChevronLeftIcon />
           Back to dashboard
-        </Link>
+        </span>
       </div>
       <div className="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
         <div>
@@ -145,12 +144,11 @@ export default function SignInFormBug() {
                       Keep me logged in
                     </span>
                   </div>
-                  <Link
-                    href="/reset-password"
-                    className="text-sm text-brand-500 hover:text-brand-600 dark:text-brand-400"
+                  <span
+                    className="text-sm text-brand-500 cursor-not-allowed opacity-70"
                   >
                     Forgot password?
-                  </Link>
+                  </span>
                 </div>
                 {message && <div className="text-sm text-center text-red-600">{message}</div>}
                 <div>
@@ -165,7 +163,7 @@ export default function SignInFormBug() {
               <p className="text-sm font-normal text-center text-gray-700 dark:text-gray-400 sm:text-start">
                 Don&apos;t have an account? {""}
                 <Link
-                  href="/signup"
+                  href="/signupbug"
                   className="text-brand-500 hover:text-brand-600 dark:text-brand-400"
                 >
                   Sign Up

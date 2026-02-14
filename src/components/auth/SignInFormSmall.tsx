@@ -20,13 +20,12 @@ export default function SignInFormSmall() {
   return (
     <div className="flex flex-col flex-1 lg:w-1/2 w-full">
       <div className="w-full max-w-sm sm:pt-6 mx-auto mb-3">
-        <Link
-          href="/"
-          className="inline-flex items-center text-xs text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+        <span
+          className="inline-flex items-center text-xs text-gray-500 cursor-not-allowed opacity-70 dark:text-gray-400"
         >
           <ChevronLeftIcon />
           <span className="ml-1">Back</span>
-        </Link>
+        </span>
       </div>
       <div className="flex flex-col justify-center flex-1 w-full max-w-sm mx-auto">
         <div>
@@ -98,7 +97,7 @@ export default function SignInFormSmall() {
                     <Checkbox checked={isChecked} onChange={setIsChecked} />
                     <span className="block font-normal text-gray-700 dark:text-gray-400">Keep me logged in</span>
                   </div>
-                  <Link href="/reset-password" className="text-xs text-brand-500">Forgot?</Link>
+                  <span className="text-xs text-brand-500 cursor-not-allowed opacity-70">Forgot?</span>
                 </div>
                 {message && <div className="text-xs text-center text-red-600">{message}</div>}
                 <div>
